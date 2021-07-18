@@ -39,13 +39,14 @@
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+  border-top: 1px solid #fafafa;
 }
 .recipe-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .recipe-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #2824ff;
   margin-bottom: 8px;
 }
 .recipe-preview a{
@@ -55,14 +56,14 @@
 /* blog details page */
 .recipe-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #ffba24;
   margin-bottom: 10px;
 }
 .recipe-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: #ffba24;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -95,9 +96,10 @@
 }
 .logo{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  align-content: center;
+  height: auto;
+  width: 100%;
+
 }
 .title{
   display: flex;
@@ -105,4 +107,52 @@
   justify-content: center;
   align-items: center;
   height: 200px;
+  
+}
+img{
+
+    width: 100%;
+    height: auto;
+  
+}
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block{
+  border: 2px solid #ffba24;
+  border-radius: 8px;
+  
+}
+h3{
+  color: #ffba24;
+
+}
+.help{
+  display: flex;
+  font-size:30px;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-align: center;
+}
+.help h3{
+  color:black;
 }

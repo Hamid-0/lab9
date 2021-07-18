@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./Logo.png";
-import { useEffect, useState } from "react";
-import RecipeList from "./RecipeList";
 import useFetch from "./useFetch";
 const Home = () => {
-  const { error, isPending, data: recipes } = useFetch('http://localhost:8000/recipes')
 
   return (
     <div className="home">
@@ -17,9 +14,7 @@ const Home = () => {
         <Link to="/favourites"><button>Favourites</button></Link>
         <Link to="/faq"><button>Help</button></Link>
       </div>
-      { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-      { recipes && <RecipeList recipes={recipes} /> }
+  
     </div>
   );
 }
